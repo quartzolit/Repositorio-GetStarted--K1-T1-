@@ -15,6 +15,12 @@ Realiza o reconhecimento de mudanças feitos no repositório local. Seja a cria�
 
 Reconhece as mudanças de todos os arquivos existentes dentro do repositório
 
+## Git rm
+
+Remove arquivos que estão no index. Fazendo eles não serem rastreados pelo git. Completo oposto do add
+
+        git rm readme.md
+
 ## Git commit
 
 Adiciona as mudanças reconhecidas pelo git add e salva elas em uma versão única do repositório
@@ -56,6 +62,8 @@ Lista todas as branches
         git branch -d/D nome_dabranch // deleta branche de nome especificado, se usar -D realiza de forma forçada
 
         git branch -m [nome_antigo] novo_nome // renomeia a branch atual para o novo_nome ou pode usar nome antigo caso não esteja na branch normal
+
+
 
 ## Git Push
 
