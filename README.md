@@ -55,6 +55,8 @@ Lista todas as branches
         git branch nome_da_branch // cria uma branch com o nome especificado
         git branch -d/D nome_dabranch // deleta branche de nome especificado, se usar -D realiza de forma forçada
 
+        git branch -m [nome_antigo] novo_nome // renomeia a branch atual para o novo_nome ou pode usar nome antigo caso não esteja na branch normal
+
 ## Git Push
 
 Envia o último commit para o repositório local
