@@ -60,6 +60,7 @@ Lista todas as branches
 Envia o último commit para o repositório local
 
         git push origin main //envia para a branch principal
+        git push -u origin nome_da_branch // envia para a branch especificada no repositório
 
 ## Git Pull
 
@@ -77,6 +78,56 @@ Compara os arquivos de branches diferentes, ou do repositório remoto e local e 
 
         git checkout main
         git merge develop // pega as alterações da branch develop e adiciona no branch main
+
+
+## Git Tag
+
+Cria tags em commits específicos
+
+        git tag         // lista as tags
+        git tag nome    //
+        git tag -d/D nome : deleta a tag local
+        git push -u origin nome_da_tag: adiciona a tag no repositório (aparece em releases)
+        git push --delete origin nome: deleta a tag no repositório
+
+## Git Stash
+
+Adiciona modificações na pilha de memória
+
+        git stash // add na pilha
+        git stash list // mostra a lista de stashes na pilha
+        git stash pop [nome] // puxa da pilha o stash mais recente. A não ser que você digite um nome de stash especifico
+
+        git stash drop [nome] // remove da pilha o mais recente ou o stash nomeado
+
+        git stash apply // aplica as modificações que estão em stash
+
+## Git rebase
+
+Deixas os commits em branches que serão mergeadas de forma linear para que não se criem commits adicionais na hora do merge. Isso se aplica quando há commits feitos em ambos as branches antes de ocorrer algum merge
+
+Passo1: checkout na branch secundária -> git rebase primária
+
+Passo2: checkout na branch primária -> git rebase secundária
+
+## Alias
+
+Cria atalhos nos códigos do git
+
+Ex:
+        git config --global alias.ch checkout //cria o atalho ch para o comando checkout
+
+        git config --global --unset alias.ch // exclui o atalho criado
+
+## Git Remote
+Mostra a url daquele repositório específico
+
+        git remove -v
+
+## Grep
+aplica filtros para listagens de branches, tags, commits e logs
+
+ex: git branch | grep R1 // busca todas as branches que contenha R1
 
 
 
