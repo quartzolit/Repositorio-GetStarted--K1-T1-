@@ -21,6 +21,16 @@ Remove arquivos que estão no index. Fazendo eles não serem rastreados pelo git
 
         git rm readme.md
 
+## Git mv
+renomeia o nome de um arquivo
+
+        git mv README.md meleia.md //mudei o nome de README.md para meleia.md
+        -f // força a mudança
+        -k // pula a mudança se isso for gerar um erro
+        -n / --dry-run // faz nada, mas mostra o que aconteceria
+        -v / --verbose // Reporta o nome dos arquivos quando eles mudarem
+
+
 ## Git commit
 
 Adiciona as mudanças reconhecidas pelo git add e salva elas em uma versão única do repositório
