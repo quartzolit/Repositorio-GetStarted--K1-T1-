@@ -127,7 +127,9 @@ Mostra a url daquele repositório específico
 ## Grep
 aplica filtros para listagens de branches, tags, commits e logs
 
-ex: git branch | grep R1 // busca todas as branches que contenha R1
+ex:
+
+    git branch | grep R1 // busca todas as branches que contenha R1
 
 
 
